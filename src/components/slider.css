@@ -1,0 +1,42 @@
+:root {
+  --index: 0;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  max-width: 1200px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  margin: auto;
+  height: 190px;
+}
+
+ul li {
+  width: 50%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border: 2px solid red;
+  transform: translateX(calc(var(--index)* -200%));
+  transition: 1s ease;
+}
+
+.btn{
+  position: absolute;
+  padding: 20px 5px;
+  border-radius: 50%;
+  top: 75px;
+  outline: 0;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.btn-next {
+  right: 15px;
+
+}
