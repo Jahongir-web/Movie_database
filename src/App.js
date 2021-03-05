@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import axios from "axios"
 
-import Slider from './components/slider';
+// import Slider from './components/slider';
 import Results from './components/Results';
 import Result from './components/Popup';
 import Search from './Search';
@@ -70,7 +70,7 @@ function App() {
 
         {(typeof state.selected.Title != "undefined") ? <Popup selected={state.selected} closePopup={closePopup} /> : false}
       </main>
-     <Slider/>
+     {/* <Slider/> */}
     </div>
   );
 }
